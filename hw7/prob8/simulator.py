@@ -18,7 +18,7 @@ def simulate():
     # read the image in grayscale
     I = np.load('helper.npy')
     sp = np.sum(I)
-    numMeasurements = 6500
+    numMeasurements = 3000
     numPixels = I.size
     Mask, A = randMasks(numMeasurements,numPixels)
     full_signal = I.reshape((numPixels,1))
